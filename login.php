@@ -39,12 +39,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         header("location: dashboard.php");
                     } else {
                         // Password is not valid
-                        header("location: index.html?error=" . urlencode("Invalid username or password."));
+                        header("location: index.php?error=" . urlencode("Invalid username or password."));
                     }
                 }
             } else {
                 // Username doesn't exist
-                header("location: index.html?error=" . urlencode("Invalid username or password."));
+                header("location: index.php?error=" . urlencode("Invalid username or password."));
             }
         } else {
             echo "Oops! Something went wrong. Please try again later.";
